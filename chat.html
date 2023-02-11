@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Chat Bot</title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+
+		<div class="open">
+			<div class="layer"></div>
+			
+		</div>
+		<div class="header" style="top:50px">
+			<ul>
+				<li>
+				   <img src="headlogo.png" style="width: 350px;">
+			   </li>
+			   <li>
+				   <a href="index.html" >Home</a>
+			   </li>
+			   <li>
+				   <a href="TECHNICAL.html" >Technical</a>
+			   </li>
+			   <li>
+				   <a href="NON-TECHNICAL.html" >Non-Technical</a>
+			   </li>
+			   <li>
+				<a href="ack.html">Accommodation</a>
+				</li>
+			   <li>
+				   <a href="contact.html">Contact</a>
+			   </li>
+			   <li>
+				   <a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+			   </li>
+		   </ul>
+			</div>
+		<section id="blur">			
+			<div class="bannerText">
+				<h2>IMPELLZ '23</h2><br>
+				<h3>Chat Bot</h3>
+				<p style="color: #fff;">Chatbots  automates the tasks performed frequently at specific time periods. This enables the employees  to focus on the more important tasks and prevents customers from waiting to receive responses. In this event the participants can present their innovative ideas on chatbot.</p>
+				<a href="#" onclick="toggle()">Know more</a>
+			</div>
+			<div class="element1"></div>
+			<div class="element2"></div>
+			
+			
+		</section>
+		<div id="popup">
+        		<h2>Chat Bot</h2>
+        		<strong>Rules:</strong>
+				<ul>
+        			<li><p>Team size: 2 - 3</p></li>
+        			<li><p>Demo is Mandatory</p></li>
+        			<li><p>Should mimic Human like interactions</p></li>
+        		</ul>
+				<br>
+				
+				<h2>Description:</h2>
+				<p>Participants can describe their ideas on chatbot at the time of registration. After  the registration,participants will receive a confirmation mail in which they should submit the working model of their chatbot. The participants will have to present their chatbot in front of the jury during the event. Winners will be selected based on the quality and innovation of their work.</p>
+        		
+        		<br>
+        		<strong>Topics:</strong>
+        		<ul>
+        			<li><p>Hospital</p></li>
+        			<li><p>Agriculture</p></li>
+        			<li><p>Government Scheme (Loan)</p></li>
+        			<li><p>Food</p></li>
+        			<li><p>Education</p></li>
+        			<li><p>Traffic (RTO)</p></li>
+        			<li><p>Banking</p></li>
+        		</ul>
+        		
+        		
+        		<a href="#" onclick="toggle()">Close</a>
+
+
+    		</div><br>
+		<script>
+			function toggle(){
+            	var blur = document.getElementById('blur');
+            	blur.classList.toggle('active');
+            	var blur = document.getElementById('blur');
+            	popup.classList.toggle('active');
+            }
+
+    </script>
+    <style>
+    section#blur.active{
+    filter: blur(30px);
+    pointer-events: none;
+    user-select: none;
+    }
+    #popup a{
+        position: relative;
+        padding: 5px 20px;
+        display: inline-block;
+        
+        text-decoration: none;
+        color: #fff;
+        background: #111;
+
+    }
+    .top
+    {
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	gap: 40px;
+    }
+    #popup{
+        position: fixed;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        padding: 50px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 20px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    #popup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+
+    }
+ 
+    </style>
+	</body>
+</html>

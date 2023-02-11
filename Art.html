@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Paper Presentation
+
+        </title>
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+
+		<div class="open">
+			<div class="layer"></div>
+			
+		</div>
+		<div class="header" style="top:50px">
+			<ul>
+				 <li>
+					<img src="headlogo.png" style="width: 350px;">
+				</li>
+				<li>
+					<a href="index.html" >Home</a>
+				</li>
+				<li>
+					<a href="TECHNICAL.html" >Technical</a>
+				</li>
+				<li>
+					<a href="NON-TECHNICAL.html" >Non-Technical</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="price.html" style="background:linear-gradient(45deg,#141da2,#9b5cf6);padding: 10px 10px;">Register</a>
+				</li>
+			</ul>
+		</div>
+		<section id="blur">			
+			<div class="bannerText">
+				<h2>IMPELLZ '23</h2><br>
+				<h3>Art The Person</h3>
+				<p style="color: #fff;">  Art competitions will help you to gain  a unique immortal exposure which allows them to display self-expression and supports their creative ideas. </p>
+				<a href="#" onclick="toggle()">Know more</a>
+			</div>
+			<div class="element1"></div>
+			<div class="element2"></div>
+			
+			
+		</section>
+		<div id="popup">
+        		<h2>ArtThePerson</h2>
+        		<strong>Rules:</strong>
+				<ul>
+        			<li><p>Individual participation</p></li>
+        			
+				</ul>
+				<h2>Description:</h2>
+				<p>The event consists of a single round. In the first round, the participants will be given a picture or person to portrait. The jury members will decide the winner.</p>
+               
+        		<a href="#" onclick="toggle()">Close</a>
+
+
+    		</div><br>
+		<script>
+			function toggle(){
+            	var blur = document.getElementById('blur');
+            	blur.classList.toggle('active');
+            	var blur = document.getElementById('blur');
+            	popup.classList.toggle('active');
+            }
+
+    </script>
+    <style>
+    section#blur.active{
+    filter: blur(30px);
+    pointer-events: none;
+    user-select: none;
+    }
+    #popup a{
+        position: relative;
+        padding: 5px 20px;
+        display: inline-block;
+        
+        text-decoration: none;
+        color: #fff;
+        background: #111;
+
+    }
+    .top
+    {
+    	display: flex;
+    	flex-wrap: wrap;
+    	flex-direction: row;
+    	gap: 40px;
+    }
+    #popup{
+        position: fixed;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 600px;
+        padding: 50px;
+        border-top-right-radius: 50%;
+        border-top-left-radius: 20px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, .30);
+        background: #fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    #popup.active{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+
+    }
+	  </style>
+	</body>
+</html>
